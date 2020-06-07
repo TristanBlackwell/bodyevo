@@ -1,2 +1,3 @@
 # bodyevo
-Static site using materializeCSS and JS for bodyEvo ladies gym
+
+Static site styled with materializeCSS and JS for bodyEvo ladies gym

@@ -274,6 +274,7 @@ strong {
 
 #timetable {
   font-size: 18px;
+  margin: 0 10px 0 10px;
 }
 
 #beautyHero {
@@ -288,6 +289,10 @@ strong {
 #beautyHeader {
   margin-top: 5vh;
   color: #283593;
+}
+
+#beautyHero p {
+  margin: 0 10px 0 10px;
 }
 
 #beautyHeader i {
