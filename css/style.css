@@ -1,0 +1,502 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+  overflow-x: hidden;
+}
+nav ul a,
+nav .brand-logo {
+  color: #303f9f;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #303f9f;
+}
+
+.parallax {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/hero.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#landingTitle,
+#gymTitle {
+  font-family: monospace;
+}
+
+.fas {
+  color: #303f9f;
+}
+
+#download-button {
+  background-color: #283593;
+}
+
+#ce2d4f {
+}
+
+a {
+  color: #283593;
+}
+
+strong {
+  color: #283593;
+}
+
+#groupImage {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/groupworkout.jpg) no-repeat center;
+  object-fit: contain;
+}
+
+#manicureImage {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/manicure.jpg) no-repeat center;
+  object-fit: contain;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+#contactLink {
+  font-weight: 700;
+}
+
+#contactLink:hover {
+  text-decoration: underline;
+}
+
+.info {
+  padding: 4vh 0 4vh 0;
+}
+
+#gymHero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/gymHero.jpg) no-repeat center;
+  background-size: cover;
+  height: 30vh;
+  font-family: "monospace", sans-serif;
+  font-weight: 600;
+}
+
+#gymInfoTag {
+  padding: 0 10% 5% 10%;
+  font-weight: 600;
+}
+
+#gymInfoText {
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.gymHeader {
+  padding-top: 1px;
+  line-height: 0;
+}
+
+#gymInfoText {
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 15px;
+}
+
+.cardItem {
+  padding-left: -3vw;
+  margin: 0;
+  line-height: 0;
+}
+
+.cardImage {
+  padding: 0 !important;
+  border-radius: 5%;
+}
+
+.cardImage img {
+  border-radius: 5px;
+}
+
+.cardText i {
+  color: #283593;
+  padding-right: 1vw;
+}
+
+.cardText {
+  margin-top: 10vh;
+}
+
+.cardText h5 {
+  font-size: 30px;
+  font-family: monospace;
+}
+
+.cardText p {
+  padding: 0 2vw 0 2vw;
+  font-size: 20px;
+}
+
+.cardText ul {
+  margin-left: 10.5vw;
+}
+
+.cardText li {
+  padding-top: 2vh;
+  font-size: 20px;
+}
+
+.fa-check {
+  margin-right: 3%;
+  margin-bottom: 3%;
+}
+
+.fa-angle-right {
+  margin-right: 3%;
+}
+
+#pricingSection {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#pricingSection i {
+  color: #283593;
+}
+
+#membershipsText {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  height: 400px;
+}
+
+.cardList {
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+#priceContact {
+  color: white;
+  text-decoration: underline;
+}
+
+#classesHero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/classes.jpg) no-repeat center;
+  background-size: cover;
+  height: 30vh;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+}
+
+#classesHero h2,
+#beautyHero h2,
+#gymHero h2,
+#contactHero h2 {
+  font-family: "work-sans", monspace, sans-serif;
+  font-weight: 600;
+  padding-top: 5vh;
+}
+
+#classesHero p,
+#beautyHero p,
+#gymHero p,
+#contactHero p {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: monospace;
+}
+
+#classesSummary {
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+}
+
+#classesHeader {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "work-sans", sans-serif;
+}
+
+#classesHeader strong {
+  font-weight: 600;
+}
+
+#benefits .fas {
+  transform: scale(3);
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+#benefitsText p {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+#bookClass,
+#beautyHeader {
+  font-weight: 600;
+  margin: 0 5vw 0 5vw;
+}
+
+#emailLink {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+#classes {
+  padding-bottom: 5vh;
+}
+
+#classesTable {
+  padding-top: 3vh;
+}
+
+#timetable {
+  font-size: 18px;
+}
+
+#beautyHero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../images/beautyHero.jpg) no-repeat center;
+  background-size: cover;
+  height: 30vh;
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+}
+
+#beautyHeader {
+  margin-top: 5vh;
+  color: #283593;
+}
+
+#beautyHeader i {
+  transform: scale(2.5);
+  opacity: 0.8;
+}
+
+#srBio {
+  margin-top: 3vh;
+}
+
+#bioImage {
+  height: 500px;
+  width: 500px;
+}
+
+#srProfession {
+  padding-bottom: 3vh;
+  font-size: 18px;
+}
+
+#sliderTitle {
+  font-family: monospace, sans-serif;
+}
+
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+  padding-top: 3vh;
+}
+
+#slider {
+  padding-bottom: 3vh;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#formSection {
+  padding: 3vh 0 3vh 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+#formSection .active {
+  background-color: transparent !important;
+}
+
+#submitForm {
+  margin-left: 3px;
+}
+
+#submitButton {
+  color: white;
+  letter-spacing: 1px;
+}
+
+.footer-copyright {
+  height: 5vh;
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+  .cardImage {
+    margin-top: 2vh;
+  }
+
+  #classesHeader {
+    text-align: left !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  .gymHeader {
+    min-height: 225px;
+  }
+
+  #classesHero {
+    min-height: 200px;
+  }
+
+  #classesHero p,
+  #beautyHero p,
+  #gymHero p,
+  #contactHero p {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  #bioImage {
+    height: 275px;
+    width: 275px;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+  color: #303f9f;
+}
+
+footer.page-footer {
+  margin: 0;
+}
