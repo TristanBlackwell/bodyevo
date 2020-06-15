@@ -747,6 +747,10 @@ thead {
     display: none;
   }
 
+  table {
+    margin-left: 3rem;
+  }
+
   #centerFeature {
     border: none;
   }
