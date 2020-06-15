@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@500&family=Montserrat&display=swap" rel="stylesheet">
     <link
       href="css/materialize.css"
       type="text/css"
@@ -28,21 +29,23 @@
     ></script>
   </head>
   <body>
-    <nav class="white" role="navigation">
+    <nav role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="./index.html" class="brand-logo">Logo</a>
+        <a id="logo-container" href="./index.html" class="brand-logo"><img src="./images/evoLogo.png" alt="logo" class="logo"/></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="./gymInfo.html">Gym/Memberships</a></li>
           <li><a href="./classes.html">Classes</a></li>
-          <li><a href="./srBeauty.html">SR Beauty</a></li>
+          <li><a href="./evoMassage.html">Evo massage</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="https://www.facebook.com/pg/BodyEvoFitnessStudio/posts/?ref=page_internal" target="_blank" class="fa fa-facebook"></a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
           <li><a href="./gymInfo.html">Gym/Memberships</a></li>
           <li><a href="./classes.html">Classes</a></li>
-          <li><a href="./srBeauty.html">SR Beauty</a></li>
+          <li><a href="./evoMassage.html">Evo massage</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="https://www.facebook.com/pg/BodyEvoFitnessStudio/posts/?ref=page_internal" target="_blank" class="fa fa-facebook"><span>Find us on Facebook</span></a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
@@ -51,20 +54,20 @@
     </nav>
 
     <div class="section no-pad-bot gymHeader">
-      <div id="gymHero" class="gymHeader white-text">
+      <div id="gymHero" class="gymHeader">
         <h2 class="center">Start Today</h2>
-        <p class="center white-text">Begin a new evolution of fitness</p>
+        <p class="center">Begin a new evolution of fitness</p>
       </div>
     </div>
 
-    <div class="grey lighten-3">
+    <div >
     <div class="container">
-      <p class="center" id="gymInfoText">As a new member, your journey begins with a 
+      <p class="center" id="gymInfoText">Begin your journey with a 
         30 minute free trial session working with a team member through our circuits 
-        to learn the fundamental movements and how the gym functions with our unique
+        learning the fundamental movements and how the gym functions with our unique
         style of training.
         <br /><br />
-        Once this session is completed you are welcome to join our regular class schedule 
+        Once this session is completed we are eager to welcome you to our regular class schedule 
         and take your first steps into Body evo.</p>
     </div>
   </div>
@@ -72,9 +75,9 @@
     <div class="divider"></div>
 
     <div class="info">
-            <div class="row cardItem">
+            <div class="row cardItem" id="card1">
                 <div class="col s12 m12 l6 cardImage">
-                    <img src="./images/circuit.jpg" alt="kettlebell and shoes" width="100%" height="auto">
+                    <img src="./images/gymPic1.jpg" alt="our gym" width="100%" height="auto">
                 </div>
                 <div class="col s12 m12 l6 cardText">
                     <h5 class="center"><i class="fas fa-fire-alt"></i> Customised circuits</h5>
@@ -98,18 +101,18 @@
                     </aside></p>
                 </div>
                 <div class="col s12 m12 l6 cardImage">
-                    <img src="./images/treadmill.jpg" alt="treadmills" width="100%" height="auto">
+                    <img src="./images/treadmillResize.jpg" alt="treadmills" width="100%" height="700px">
                 </div>
             </div>
             <div class="row cardItem">
                 <div class="col s12 m12 l6 cardImage">
-                    <img src="./images/womenfitness.jpg" alt="women working out" width="100%" height="auto">
+                    <img src="./images/gymPic3.jpg" alt="women working out" width="100%" height="auto">
                 </div>
                 <div class="col s12 m12 l6 cardText">
                     <h5 class="center"><i class="fas fa-heartbeat"></i> endless health benefits</h5>
                     <br/>
                     <ul>
-                        <li><i class="fas fa-check"></i> Keep your weight in check and build lean muscle</li>
+                        <li><i class="fas fa-check"></i> control your weight and gain muscle</li>
                         <li><i class="fas fa-check"></i> Improve your mood, mental health and sleep</li>
                         <li><i class="fas fa-check"></i> Feel more alive and energetic</li>
                         <li><i class="fas fa-check"></i> Rejuvenate your skin</li>
@@ -119,16 +122,16 @@
             </div>
     </div>
 
-    <section id="pricingSection" class="indigo darken-4">
-        <h3 class="center white-text">Our memberships</h3>
-        <p class="center white-text" id="membershipsText">Pop in or give us a ring and we can get your membership set up in just a couple of minutes.</p>
+    <section id="pricingSection">
+        <h3 class="center">Our memberships</h3>
+        <p class="center" id="membershipsText">Pop in or give us a ring and we can get your membership set up in just a couple of minutes.</p>
     <div class="container">
         <div class="section">
           <!--   Icon Section   -->
           <div class="row">
             <div class="col s12 m12 l6">
-              <div class="card grey lighten-2" id="priceCard1">
-                <h2 class="center indigo-text">
+              <div class="card" id="priceCard1">
+                <h2 class="center">
                     <i class="far fa-heart"></i>
                 </h2>
                 <h5 class="center">Gym only</h5>
@@ -146,8 +149,8 @@
             </div>
   
             <div class="col s12 m12 l6">
-              <div class="card grey lighten-2" id="priceCard2">
-                <h2 class="center indigo-text">
+              <div class="card" id="priceCard2">
+                <h2 class="center">
                     <i class="fas fa-heart"></i>
                 </h2>
                 <h5 class="center">Gym + Classes</h5>
@@ -164,22 +167,22 @@
             </div>
           </div>
 
-          <div class="row center">
+          <div class="row center" id="signup">
             <a
               href="./contact.html"
-              id="download-button"
-              class="btn-large waves-effect waves-light grey lighten-2 indigo-text text-darken-3"
+              id="signup-button"
+              class="btn-large waves-effect waves-light"
               >Sign up today</a
             >
           </div>
         </div>
       </div>
-      <p class="center white-text">Once you arrive at the gym we will get you signed up with us and go through any necessary paperwork and induction with our instructors</p>
-      <p class="center white-text">If you require any more information on memberships and pricing dont hesitate to <a href="./contact.html" id="priceContact">get in touch</a></p>
+      <p class="center pricing">Once you arrive at the gym we will get you signed up with us and go through any necessary paperwork and induction with our instructors.</p>
+      <p class="center pricing">If you require any more information on memberships and pricing dont hesitate to <a href="./contact.html" id="priceContact">get in touch</a></p>
     </section>
 
     <footer>
-        <div class="footer-copyright valign-wrapper indigo darken-3">
+        <div class="footer-copyright valign-wrapper">
         <div class="container">
             © 2020 Copyright Bodyevo
         </div>

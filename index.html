@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:wght@500&family=Montserrat&display=swap" rel="stylesheet">
     <link
       href="css/materialize.css"
       type="text/css"
@@ -27,21 +28,23 @@
     ></script>
   </head>
   <body>
-    <nav class="white" role="navigation">
+    <nav role="navigation">
       <div class="nav-wrapper container">
-        <a id="logo-container" href="./index.html" class="brand-logo">Logo</a>
+        <a id="logo-container" href="./index.html" class="brand-logo"><img src="./images/evoLogo.png" alt="logo" class="logo"/></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="./gymInfo.html">Gym/Memberships</a></li>
           <li><a href="./classes.html">Classes</a></li>
-          <li><a href="./srBeauty.html">SR Beauty</a></li>
+          <li><a href="./evoMassage.html">Evo massage</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="https://www.facebook.com/pg/BodyEvoFitnessStudio/posts/?ref=page_internal" target="_blank" class="fa fa-facebook"></a></li>
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
           <li><a href="./gymInfo.html">Gym/Memberships</a></li>
           <li><a href="./classes.html">Classes</a></li>
-          <li><a href="./srBeauty.html">SR Beauty</a></li>
+          <li><a href="./evoMassage.html">Evo massage</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="https://www.facebook.com/pg/BodyEvoFitnessStudio/posts/?ref=page_internal" target="_blank" class="fa fa-facebook"><span>Find us on Facebook</span></a></li>
         </ul>
         <a href="#" data-target="nav-mobile" class="sidenav-trigger"
           ><i class="material-icons">menu</i></a
@@ -53,7 +56,7 @@
       <div class="section no-pad-bot">
         <div class="container">
           <br /><br />
-          <h1 class="header center white-text" id="landingTitle">
+          <h1 class="header center" id="landingTitle">
             Bodyevo
           </h1>
           <div class="row center">
@@ -61,7 +64,7 @@
               A friendly ladies only gym based on the outskirts of Witney
             </h5>
           </div>
-          <div class="row center">
+          <div class="row center" id="heroButton">
             <a
               href="./contact.html"
               id="download-button"
@@ -74,6 +77,40 @@
       </div>
       <div class="parallax" id="hero"></div>
     </div>
+
+    <div class="container covidAlert">
+      <div class="col s12 m6 l6 center">
+        <h2 class="header">Covid-19 Notice</h2>
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-content">
+              <p>
+                <b>With the ongoing situation regarding Covid-19, BodyEvo remains shut
+                  due to guidelines. Sharon and Nicole are working to have the gym 
+                  ready in the best way possible for you to have a safe and effective
+                  space to workout once you return. As soon as we can determine an opening
+                  date you can find it here or on our Facebook.
+                  <br />
+                  <br/>
+                  Protection, cleanliness and safety are our highest priority before reopening
+                  and although things will look a little different since you last stepped in, we
+                  can promise the same friendly, local ladies only studio you're use to!
+                  <br />
+                  We thank you for much for patiently waiting and joining us online
+                  and are eager to get everyone back together for our group sessions and for
+                  meeting some new ladies. 
+              </p>
+              </b>
+            </div>
+            <div class="card-action" id="reopeningDate">
+              Opening date: TBA
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
 
     <div class="container">
       <div class="section">
@@ -97,7 +134,7 @@
           </div>
 
           <div class="col s12 m4">
-            <div class="icon-block">
+            <div class="icon-block" id="centerFeature">
               <h2 class="center">
                 <a href="./classes/html">
                   <i class="material-icons" id="groupIcon">group</i>
@@ -116,16 +153,15 @@
           <div class="col s12 m4">
             <div class="icon-block">
               <h2 class="center">
-                <a href="./srBeauty.html">
-                  <i class="fas fa-hot-tub" id="tubIcon"></i>
+                <a href="./evoMassage.html">
+                  <i class="fas fa-hot-tub material-icons" id="tubIcon"></i>
                 </a>
               </h2>
               <h5 class="center">Get in shape and pampered</h5>
 
               <p class="light">
-                Fitness is only the beginning. We offer beauty treatments from
-                our qualified beautican based under the same roof, Ranging from
-                spa manicures to a full body stone massage.
+                Fitness is only the beginning. We offer in house massage therapy, ranging from
+                relaxation to a injury or sport rehab.
               </p>
             </div>
           </div>
@@ -137,7 +173,7 @@
       <div class="section no-pad-bot">
         <div class="container">
           <div class="row center">
-            <h5 class="header col s12 light">
+            <h5 class="header col s12 light tagline">
               The friendliest gym in Witney focused on improving <em>you</em>
             </h5>
           </div>
@@ -146,12 +182,12 @@
       <div class="parallax" id="groupImage"></div>
     </div>
 
-    <div class="container">
+    <div id="indexContact">
       <div class="section">
         <div class="row">
           <div class="col s12 center">
             <h3><i class="mdi-content-send brown-text"></i></h3>
-            <h4>Contact Us</h4>
+            <h3>Contact Us</h3>
             <p class="light">
               Give us a call directly on <strong>07985310161</strong> or by
               email at <strong>body.evo@hotmail.com</strong>.<br />
@@ -165,7 +201,7 @@
       </div>
     </div>
 
-    <div class="parallax-container valign-wrapper">
+    <div class="parallax-container valign-wrapper tagline">
       <div class="section no-pad-bot">
         <div class="container">
           <div class="row center">
@@ -178,12 +214,12 @@
       <div class="parallax" id="manicureImage"></div>
     </div>
 
-    <footer class="page-footer indigo darken-4">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text">Company Bio</h5>
-            <p class="grey-text text-lighten-4">
+            <h5>Get to know us</h5>
+            <p>
               We are a small gym group focused on improving the lives of other
               ladies through fitness and communication. We'd love you to join us
               on this journey and find out where it takes us and the great
@@ -192,7 +228,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-copyright valign-wrapper indigo darken-3">
+      <div class="footer-copyright valign-wrapper">
         <div class="container">
           © 2020 Copyright Bodyevo
         </div>
