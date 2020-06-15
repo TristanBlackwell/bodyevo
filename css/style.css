@@ -459,6 +459,14 @@ strong {
   padding-top: 3vh;
 }
 
+.classItem {
+  border-right: 1px solid #252523;
+}
+
+.classDescription {
+  padding-left: 20px;
+}
+
 .covidAlert {
   color: #a39274;
   font-size: 16px;
