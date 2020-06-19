@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fe6baaef.chunk.css",
+    "main.js": "/static/js/main.3edbaf38.chunk.js",
+    "main.js.map": "/static/js/main.3edbaf38.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8c40394c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8c40394c.js.map",
+    "static/js/2.400c7177.chunk.js": "/static/js/2.400c7177.chunk.js",
+    "static/js/2.400c7177.chunk.js.map": "/static/js/2.400c7177.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.c3ad58d0dee445294d56fe1949a7b255.js": "/precache-manifest.c3ad58d0dee445294d56fe1949a7b255.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.fe6baaef.chunk.css.map": "/static/css/main.fe6baaef.chunk.css.map",
+    "static/js/2.400c7177.chunk.js.LICENSE.txt": "/static/js/2.400c7177.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/massaging.75bfb8db.jpg",
+    "static/media/evoLogo.png": "/static/media/evoLogo.ac127bf0.png",
+    "static/media/evoMassage.png": "/static/media/evoMassage.a013034d.png",
+    "static/media/gymPic1.jpg": "/static/media/gymPic1.bc3a28c1.jpg",
+    "static/media/gymPic3.jpg": "/static/media/gymPic3.6f356649.jpg",
+    "static/media/signpost.jpg": "/static/media/signpost.e7574ef3.jpg",
+    "static/media/treadmillResize.jpg": "/static/media/treadmillResize.d393f85b.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8c40394c.js",
+    "static/js/2.400c7177.chunk.js",
+    "static/css/main.fe6baaef.chunk.css",
+    "static/js/main.3edbaf38.chunk.js"
+  ]
+}
