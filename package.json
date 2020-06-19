@@ -1,0 +1,23 @@
+{
+  "name": "bodyevosite",
+  "version": "1.0.0",
+  "description": "React SPA gym website for body evo ladies studio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TristanBlackwell/bodyevo.git"
+  },
+  "author": "Tristan Blackwell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TristanBlackwell/bodyevo/issues"
+  },
+  "homepage": "https://github.com/TristanBlackwell/bodyevo#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "stripe": "^8.63.0"
+  }
+}
