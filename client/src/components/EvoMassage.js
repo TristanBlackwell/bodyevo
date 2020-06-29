@@ -77,8 +77,15 @@ class EvoMassage extends Component {
         <h3 className="center" id="sliderTitle">
           Some of our treatments
         </h3>
-        <p className="center" id="sliderTitleSub">
-          <b>Below are a selection of the key massage treatments we offer</b>
+        <p id="evoDesc">
+          <b>
+            We aim to cater to everyones needs whatever they may be. This list
+            is not everything we have to offer but just our key and most
+            commonly requested treatments. Being a Body evo member is not
+            required in order to use Evo massage and should you wish to book a
+            session or ask a question just pop in or give us a call on
+            07985310161. We look forward to seeing you!
+          </b>
         </p>
         <div className="container treatments">
           <div className="row">

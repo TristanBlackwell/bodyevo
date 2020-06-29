@@ -1,6 +1,40 @@
 import React, { Component } from "react";
 
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      firstName: "",
+      lastName: "",
+      email: "",
+      phone: "",
+      message: "",
+      status: "",
+    };
+  }
+
+  submitForm(ev) {
+    ev.preventDefault();
+    const form = ev.target;
+    const data = new FormData(form);
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action);
+    xhr.setRequestHeader("Accept", "application/json");
+    console.log(1);
+    xhr.onreadystatechange = () => {
+      console.log(2);
+      if (xhr.readyState !== XMLHttpRequest.DONE) return;
+      if (xhr.status === 200) {
+        form.reset();
+        this.setState({ status: "SUCCESS" });
+      } else {
+        this.setState({ status: "ERROR" });
+      }
+    };
+    xhr.send(data);
+  }
+
   render() {
     return (
       <div>
@@ -16,7 +50,8 @@ class Contact extends Component {
               <form
                 className="col s8 offset-s2"
                 name="contact_form"
-                action="https://formspree.io/mnqgdwgv"
+                action="https://formspree.io/xqkydabn"
+                onSubmit={this.submitForm}
                 method="POST"
                 encType="multipart/form-data"
               >
@@ -24,7 +59,7 @@ class Contact extends Component {
                   <div className="input-field col s12 m6">
                     <input
                       id="first_name"
-                      name="firstname"
+                      name="first name"
                       type="text"
                       className="validate"
                       required
@@ -34,7 +69,7 @@ class Contact extends Component {
                   <div className="input-field col s12 m6">
                     <input
                       id="last_name"
-                      name="lastname"
+                      name="last name"
                       type="text"
                       className="validate"
                       required
@@ -71,7 +106,6 @@ class Contact extends Component {
                       id="textarea1"
                       name="message"
                       className="materialize-textarea"
-                      placeholder="How can we help?"
                       required
                       defaultValue={""}
                     />
@@ -79,12 +113,25 @@ class Contact extends Component {
                   </div>
                 </div>
                 <div className="row center" id="submitForm">
-                  <input
-                    type="submit"
-                    id="submitButton"
-                    className="btn-large waves-effect waves-light"
-                    defaultValue="Send"
-                  />
+                  {this.state.status === "SUCCESS" ? (
+                    <p style={{ color: "#252523", fontFamily: "Montserrat" }}>
+                      Thanks!
+                    </p>
+                  ) : (
+                    <button
+                      className="btn-large waves-effect waves-light"
+                      id="submitButton"
+                      defaultValue="Send"
+                      style={{ fontFamily: "Montserrat" }}
+                    >
+                      Submit
+                    </button>
+                  )}
+                  {this.state.status === "ERROR" && (
+                    <p style={{ color: "#252523", fontFamily: "Montserrat" }}>
+                      Ooops! There was an error.
+                    </p>
+                  )}
                 </div>
               </form>
             </div>
@@ -102,6 +149,7 @@ class Contact extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                {" "}
                 Send us a message
               </a>
             </h6>

@@ -79,6 +79,7 @@ p {
 #landingTitle,
 #gymTitle {
   font-family: "Archivo Black";
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
   color: #dfd8c8;
   letter-spacing: 1.5px;
 }
@@ -106,6 +107,7 @@ p {
 .icon-block h5 {
   color: #dfd8c8;
   font-family: "Archivo Narrow";
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
   font-size: 25px;
   letter-spacing: 1.5px;
 }
@@ -142,6 +144,7 @@ strong {
 
 #indexContact h3 {
   color: #b59762;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
   font-family: "Archivo Narrow";
 }
 
@@ -229,6 +232,11 @@ strong {
   color: #dfd8c8;
 }
 
+#gymHeaderText {
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
 #gymInfoText {
   letter-spacing: 1px;
   margin-top: 0;
@@ -275,6 +283,9 @@ strong {
   font-size: 34px;
   font-family: "Archivo Narrow", monospace;
   color: #b59762;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
 }
 
 .cardText p {
@@ -360,6 +371,7 @@ input[type="checkbox"] {
   color: #dfd8c8;
   font-family: "Archivo Narrow";
   letter-spacing: 1.5px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 #pricingSection i {
@@ -369,6 +381,12 @@ input[type="checkbox"] {
 #membershipsText {
   font-size: 20px;
   font-family: "Montserrat";
+  color: #252523;
+  padding: 0 5vw 0 5vw;
+}
+
+#membershipsText a {
+  text-decoration: underline;
   color: #252523;
 }
 
@@ -464,9 +482,17 @@ input[type="checkbox"] {
   text-transform: uppercase;
 }
 
+#contactHero h2 {
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#contactHero p {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+}
+
 #classesSummary {
   margin-top: 3vh;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
   background-color: #252523;
 }
 
@@ -523,7 +549,7 @@ input[type="checkbox"] {
 }
 
 #emailLink {
-  color: rgba(0, 0, 0, 0.87);
+  color: #b59762;
   text-decoration: underline;
 }
 
@@ -548,6 +574,7 @@ input[type="checkbox"] {
 .covidAlert h2 {
   color: #dfd8c8;
   font-family: "Archivo Narrow";
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 .covidAlert .card {
@@ -583,6 +610,7 @@ input[type="checkbox"] {
 table {
   font-family: "Montserrat";
   background-color: #252523;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
   color: #b59762;
   border-radius: 7px;
 }
@@ -605,7 +633,9 @@ thead {
 #timetable {
   font-family: "Montserrat";
   font-size: 22px;
-  margin: 0 10px 0 10px;
+  background-color: #252523;
+  color: #b59762;
+  padding: 1vh 0 1vh 0;
 }
 
 #beautyHero {
@@ -637,6 +667,9 @@ thead {
 
 #srBio {
   margin-top: 3vh;
+  padding: 1vw;
+  background-color: #252523;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
 }
 
 #srBio h3 {
@@ -644,10 +677,14 @@ thead {
   font-family: "Archivo Narrow";
 }
 
+#srBio h5 {
+  color: #77815c;
+}
+
 #srBio p {
   font-family: "Montserrat";
   font-size: 18px;
-  color: #252523;
+  color: #b59762;
 }
 
 #bioImage {
@@ -671,11 +708,20 @@ thead {
   font-family: "Montserrat";
 }
 
+#evoDesc {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-family: "Montserrat";
+  color: #252523;
+}
+
 .treatments .card {
   height: 400px;
   overflow-x: hidden;
   background-color: #252523;
   color: #dfd8c8;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
 }
 
 .treatments .card-action a {
@@ -735,6 +781,17 @@ thead {
   color: #252523;
 }
 
+.input-field input:focus {
+  border-bottom: 1px solid #77815c !important;
+  box-shadow: 0 1px 0 0 #77815c !important;
+}
+
+.input-field input[type="text"]:focus,
+.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #77815c !important;
+  box-shadow: 0 1px 0 0 #77815c !important;
+}
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #252523;
@@ -767,7 +824,7 @@ thead {
   font-size: 18px;
 }
 
-#submitForm:hover {
+#submitButton:hover {
   transform: scale(1.05);
 }
 

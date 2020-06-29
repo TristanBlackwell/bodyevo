@@ -29,7 +29,7 @@ class Classes extends Component {
                       you.
                       <br />
                       <br />* Please do contact us in order to recieve the most
-                      up to date timetable and information relating to body evo.
+                      up to date timetable and information relating to Body evo.
                       Thank you *
                     </b>
                   </p>
@@ -95,7 +95,7 @@ class Classes extends Component {
         <div className="divider" />
 
         <div className="row" id="tableSection">
-          <div className="col s7 offset-s1">
+          <div className="col s12 m7 offset-m1">
             <div id="classesTable">
               <table>
                 <thead>

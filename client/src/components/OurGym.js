@@ -8,7 +8,7 @@ import treadmill from "../images/treadmillResize.jpg";
 import gympic3 from "../images/gymPic3.jpg";
 
 const stripePromise = loadStripe(
-  "pk_test_51Gv1QaJa7Om5U5Hjj7FuuVFtdUKuekOtdgNQQp9IddIgqasRWOR01j7glOYuEm7DOHeDr5BkM7djujPQOGckcmvN003iBMqqFD"
+  "pk_live_51Gv1QaJa7Om5U5HjykHwgUaZwxnqKIIT80ePxnjAq4DbWm68OxsQfKcCMcbEEpoOQTVOMGW9dZyb3mDBtwyH7UWm00Gjs4vcQc"
 );
 
 class OurGym extends Component {
@@ -30,8 +30,8 @@ class OurGym extends Component {
     const { error } = await stripe.redirectToCheckout({
       lineItems: [{ price: price, quantity: 1 }],
       mode: "subscription",
-      successUrl: "https://body-evo-witney.co.uk/ourgym",
-      cancelUrl: "https://body-evo-witney.co.uk/ourgym",
+      successUrl: "https://www.bodyevowitney.co.uk/ourgym",
+      cancelUrl: "https://www.bodyevowitney.co.uk/ourgym",
     });
     console.log(error.message);
   };
@@ -62,7 +62,7 @@ class OurGym extends Component {
           </div>
         </div>
         <div>
-          <div className="container">
+          <div className="container" id="gymHeaderText">
             <p className="center" id="gymInfoText">
               Begin your journey with a 30 minute free trial session working
               with a team member through our circuits learning the fundamental
@@ -166,10 +166,34 @@ class OurGym extends Component {
         <section id="pricingSection">
           <h3 className="center">Our memberships</h3>
           <p className="center" id="membershipsText">
-            Signing up is simple, straightforward and can be done in minutes.
-            Read the membership contract and physical readiness questionnaire
-            below prior to choosing a membership and once your ready just click
-            the most suitable option to continue.
+            Signing up is simple, straightforward and can be done in minutes
+            either online or at Body evo. Please print and fill out the{" "}
+            <a
+              href="https://www.dropbox.com/s/xvqeahermhdizz0/Body%20Evo%20Contract%20.pdf?dl=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              membership contract
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://www.dropbox.com/s/du9dzp5rodlu8qq/PARQ.pdf?dl=0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              physical readiness questionnaire
+            </a>{" "}
+            prior to choosing a membership. Once completed you can send these to
+            us at{" "}
+            <em style={{ color: "#252523", fontSize: "22px" }}>
+              body.evo@hotmail.com
+            </em>{" "}
+            or you can bring these with you to your first session so you can
+            jump straight in with the fun stuff as quickly as possible!
+            <br />
+            <br />
+            When your ready to continue, agree to the below terms and click your
+            desired membership below to sign up with us.
           </p>
           <div className="container">
             <label id="contractCheck">
@@ -185,9 +209,23 @@ class OurGym extends Component {
 
               <span>
                 By checking the box, I certify I have read and agree to the Body
-                evo <a href="# ">membership contract</a> and have completed the{" "}
-                <a href="# ">physical readiness questionnaire</a> to the best of
-                my knowledge
+                evo{" "}
+                <a
+                  href="https://www.dropbox.com/s/xvqeahermhdizz0/Body%20Evo%20Contract%20.pdf?dl=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  membership contract
+                </a>{" "}
+                and have completed the{" "}
+                <a
+                  href="https://www.dropbox.com/s/du9dzp5rodlu8qq/PARQ.pdf?dl=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  physical readiness questionnaire
+                </a>{" "}
+                to the best of my knowledge
               </span>
             </label>
           </div>
@@ -204,7 +242,7 @@ class OurGym extends Component {
                     <ul className="light cardList">
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1WgJa7Om5U5HjJbdu9H5O")
+                          this.checkTerms("price_1GxxTAJa7Om5U5HjbkpdlmvH")
                         }
                       >
                         <i className="fas fa-angle-right" /> Single membership -
@@ -212,7 +250,7 @@ class OurGym extends Component {
                       </li>
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1WgJa7Om5U5Hj7mZK5P07")
+                          this.checkTerms("price_1GxxTAJa7Om5U5HjwzNB2E6g")
                         }
                       >
                         <i className="fas fa-angle-right" /> Single membership 6
@@ -220,7 +258,7 @@ class OurGym extends Component {
                       </li>
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1WhJa7Om5U5HjSzz8HDsO")
+                          this.checkTerms("price_1GxxTAJa7Om5U5HjzYc1ZLFd")
                         }
                       >
                         <i className="fas fa-angle-right" /> Single membership
@@ -229,7 +267,7 @@ class OurGym extends Component {
                       <br />
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1YAJa7Om5U5HjAkcYP950")
+                          this.checkTerms("price_1GxxT4Ja7Om5U5HjkojGxaHt")
                         }
                       >
                         <i className="fas fa-angle-right" /> Mother &amp;
@@ -237,7 +275,7 @@ class OurGym extends Component {
                       </li>
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1ZrJa7Om5U5Hjf47RFaQT")
+                          this.checkTerms("price_1GxxSrJa7Om5U5Hj2DkjAOXa")
                         }
                       >
                         <i className="fas fa-angle-right" /> 16 and under -
@@ -245,7 +283,7 @@ class OurGym extends Component {
                       </li>
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1aeJa7Om5U5HjsURKkNbi")
+                          this.checkTerms("price_1GxxSmJa7Om5U5HjzKACqXc1")
                         }
                       >
                         <i className="fas fa-angle-right" /> Slimming world
@@ -263,7 +301,7 @@ class OurGym extends Component {
                     <ul className="light cardList">
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1cHJa7Om5U5HjfL56Lpty")
+                          this.checkTerms("price_1GxxSgJa7Om5U5Hj7fo5UnPE")
                         }
                       >
                         <i className="fas fa-angle-right" /> Single membership -
@@ -271,7 +309,7 @@ class OurGym extends Component {
                       </li>
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1cHJa7Om5U5HjjoZYse0M")
+                          this.checkTerms("price_1GxxSgJa7Om5U5HjORQ0wjv6")
                         }
                       >
                         <i className="fas fa-angle-right" /> Single membership
@@ -279,16 +317,16 @@ class OurGym extends Component {
                       </li>
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1cHJa7Om5U5HjQfSSISEd")
+                          this.checkTerms("price_1GxxSgJa7Om5U5HjIZSnhyK9")
                         }
                       >
-                        <i className="fas fa-angle-right" /> Single memberhip
+                        <i className="fas fa-angle-right" /> Single membership
                         (12 months) - £350.00 <strong>(save £70)</strong>
                       </li>
                       <br />
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1dMJa7Om5U5HjIIlk9GaF")
+                          this.checkTerms("price_1GxxScJa7Om5U5HjskNfiPMj")
                         }
                       >
                         <i className="fas fa-angle-right" /> Mother &amp;
@@ -296,7 +334,7 @@ class OurGym extends Component {
                       </li>
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1Gv1eKJa7Om5U5HjQPuGCeBm")
+                          this.checkTerms("price_1GxxSVJa7Om5U5Hj5pcyqpvW")
                         }
                       >
                         <i className="fas fa-angle-right" /> Student membership

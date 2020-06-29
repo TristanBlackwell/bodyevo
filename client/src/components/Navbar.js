@@ -44,16 +44,24 @@ class Navbar extends Component {
 
           <ul id="nav-mobile" className="sidenav">
             <li>
-              <NavLink to="/ourGym">Gym/Memberships</NavLink>
+              <NavLink to="/ourGym" className="sidenav-close">
+                Gym/Memberships
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/classes">Classes</NavLink>
+              <NavLink to="/classes" className="sidenav-close">
+                Classes
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/evoMassage">Evo massage</NavLink>
+              <NavLink to="/evoMassage" className="sidenav-close">
+                Evo massage
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink to="/contact" className="sidenav-close">
+                Contact Us
+              </NavLink>
             </li>
             <li>
               <a
