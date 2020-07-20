@@ -342,7 +342,7 @@ class OurGym extends Component {
                       </li>
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1H75jBJa70m5U5HjnTOAUV77")
+                          this.checkTerms("price_1H75jBJa7Om5U5HjnTOAUV77")
                         }
                       >
                         <i className="fas fa-angle-right" /> Slimming world
@@ -350,7 +350,7 @@ class OurGym extends Component {
                       </li>
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1H75kdJa70m5U5Hjik6uPUNF")
+                          this.checkTerms("price_1H75kdJa7Om5U5Hjik6uPUNF")
                         }
                       >
                         <i className="fas fa-angle-right" /> Student membership
