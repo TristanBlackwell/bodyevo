@@ -41,30 +41,86 @@ class Landing extends Component {
             <div className="card horizontal">
               <div className="card-stacked">
                 <div className="card-content">
-                  <p>
+                  <div>
                     <b>
-                      With the ongoing situation regarding Covid-19, BodyEvo
-                      remains shut due to guidelines. Sharon and Nicole are
-                      working to have the gym ready in the best way possible for
-                      you to have a safe and effective space to workout once you
-                      return. As soon as we can determine an opening date you
-                      can find it here or on our Facebook.
+                      In line with the latest government guidelines on Covid-19,
+                      We can say with much happiness that BodyEvo will re-open
+                      it's doors to members from Monday 27th July!
+                      <br /> We have worked continually to create the safest
+                      possible environment to workout in and as a result have
+                      some restrictions in place under reduced hours to protect
+                      everyone involved whilst reviewing the changes we make.
                       <br />
                       <br />
-                      Protection, cleanliness and safety are our highest
-                      priority before reopening and although things will look a
-                      little different since you last stepped in, we can promise
-                      the same friendly, local ladies only studio you're use to!
+                      The guidelines are as follows:
+                      <ul id="guidelinesList">
+                        <li>
+                          Maximum 8 people in the gym (2 maximum for the
+                          hydraulic room).
+                        </li>
+                        <li>
+                          1 hour time slots to give all members an equal chance
+                          at visiting the gym.
+                        </li>
+                        <li>
+                          Social distancing will be in force for all members and
+                          staff.
+                        </li>
+                        <li>
+                          Hand sanitiser used on entering and leaving the gym
+                          with all equipment cleaned after use
+                        </li>
+                        <li>Card payments are preferred.</li>
+                      </ul>
+                      <br />
+                      * Bookings are not currently required at this time *
+                      <br />
+                      <br />
+                      These will be continually reviewed to create the smoothest
+                      functioning gym we can whilst ensuring everyone is
+                      protected.
+                      <br />
                       <br />
                       We thank you for much for patiently waiting and joining us
-                      online and are eager to get everyone back together for our
-                      group sessions and for meeting some new ladies.
+                      online and are happy to get everyone back together for our
+                      group sessions and for meeting some new ladies!
+                      <div id="covidSignup" className="center">
+                        <NavLink
+                          to="/ourGym"
+                          id="covidSignupButton"
+                          className="btn-large waves-effect waves-light"
+                        >
+                          Sign Up Today
+                        </NavLink>
+                      </div>
                     </b>
-                  </p>
+                  </div>
                   <b></b>
                 </div>
                 <div className="card-action" id="reopeningDate">
-                  Opening date: TBA
+                  Opening date: 27th July
+                  <br />
+                  <br />
+                  Opening hours -
+                  <br />
+                  <div id="openingHours">
+                    <div>
+                      <span> Mon - Thurs :</span>
+                      <span> 8:30AM - 1PM / 4PM - 8PM</span>
+                    </div>
+                    <div>
+                      <span> Fri :</span>
+                      <span> 8:30AM - 1PM / 4PM - 6PM</span>
+                    </div>
+                    <div>
+                      <span> Sat :</span>
+                      <span> 9AM - 12PM</span>
+                    </div>
+                    <div>
+                      <span> Sun :</span>
+                      <span> Closed</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -585,15 +585,51 @@ input[type="checkbox"] {
   font-family: "Montserrat";
 }
 
+#guidelinesList {
+  margin-left: 1.5rem;
+  margin-right: 4rem;
+}
+
+#guidelinesList li {
+  margin-top: 1rem;
+  list-style-type: disc !important;
+}
+
 .card-action {
   font-family: "Archivo Narrow";
 }
 
+#covidSignupButton {
+  background-color: transparent;
+  border: 4px solid #b59762;
+  color: inherit;
+  font-family: "Archivo Narrow";
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  box-shadow: none;
+  margin-top: 2rem;
+}
+
 #reopeningDate {
+  display: block;
   color: #dfd8c8;
   font-size: 25px;
   font-weight: 900;
   letter-spacing: 1.5px;
+}
+
+#openingHours {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#openingHours div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 #contactAlert a {
@@ -851,6 +887,17 @@ thead {
   }
   #index-banner .section {
     top: 10%;
+  }
+
+  #openingHours {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  #openingHours div {
+    display: block;
+    width: 100%;
   }
 
   .cardImage {

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 import evoMassageLogo from "../images/evoMassage.png";
 
@@ -18,25 +19,18 @@ class EvoMassage extends Component {
                 <div className="card-content">
                   <p>
                     <b>
-                      As a result of Covid-19, Evo massage is currently shut
-                      under the current government guidelines. We aim to open as
-                      soon as we can safetly do so while keeping clients safe.
-                      If you are interested in having treament at the earliest
-                      possible date please use the link below to join the
-                      waiting list and hopefully we can find a date best for
-                      you!
+                      Evo Massage is now open once again folllowing the latest
+                      government guidance. Treatments are as always designed
+                      with the greatest care and cleanliness in mind for you to
+                      safely recieve your next massage to the highest standard.
                     </b>
                   </p>
                   <b></b>
                 </div>
                 <div className="card-action" id="waitingList">
-                  <a
-                    href="https://www.waitlistr.com/lists/9bf3ec22/evo-massage-lockdown-release-waiting-list"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Click here for our waiting list
-                  </a>
+                  <NavLink to="/contact">
+                    Please call or email to book an appointment
+                  </NavLink>
                 </div>
               </div>
             </div>
