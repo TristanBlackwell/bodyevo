@@ -287,7 +287,15 @@ class OurGym extends Component {
                         }
                       >
                         <i className="fas fa-angle-right" /> Slimming world
-                        members - £19.00
+                        members/NHS - £19.00
+                      </li>
+                      <li
+                        onClick={() =>
+                          this.checkTerms("price_1GxxSVJa7Om5U5Hj5pcyqpvW")
+                        }
+                      >
+                        <i className="fas fa-angle-right" /> Student membership
+                        - £19.00
                       </li>
                     </ul>
                   </div>
@@ -334,11 +342,19 @@ class OurGym extends Component {
                       </li>
                       <li
                         onClick={() =>
-                          this.checkTerms("price_1GxxSVJa7Om5U5Hj5pcyqpvW")
+                          this.checkTerms("price_1H75jBJa70m5U5HjnTOAUV77")
+                        }
+                      >
+                        <i className="fas fa-angle-right" /> Slimming world
+                        members/NHS - £19.00
+                      </li>
+                      <li
+                        onClick={() =>
+                          this.checkTerms("price_1H75kdJa70m5U5Hjik6uPUNF")
                         }
                       >
                         <i className="fas fa-angle-right" /> Student membership
-                        - £19.00
+                        - £25.00
                       </li>
                     </ul>
                   </div>
