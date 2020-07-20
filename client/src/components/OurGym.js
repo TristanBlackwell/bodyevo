@@ -346,7 +346,7 @@ class OurGym extends Component {
                         }
                       >
                         <i className="fas fa-angle-right" /> Slimming world
-                        members/NHS - £19.00
+                        members/NHS - £28.00
                       </li>
                       <li
                         onClick={() =>
