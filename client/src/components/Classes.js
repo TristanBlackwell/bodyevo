@@ -10,7 +10,7 @@ class Classes extends Component {
       <div>
         <div id="classesHero" className="gymHeader">
           <h2 className="center">Classes</h2>
-          <p className="center">crafted around our members</p>
+          <p className="center">Crafted around our members</p>
         </div>
         <div className="container covidAlert">
           <div className="col s12 m6 l6 center">
@@ -50,7 +50,7 @@ class Classes extends Component {
                   Our classes run throughout the day.
                   <br />
                   <strong>
-                    suitable for all age ranges and fitness levels.
+                    Suitable for all age ranges and fitness levels.
                   </strong>
                 </p>
               </div>

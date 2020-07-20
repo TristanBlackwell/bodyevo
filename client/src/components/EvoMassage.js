@@ -175,7 +175,7 @@ class EvoMassage extends Component {
                 <div className="card-content">
                   <span className="card-title">Sports Massage</span>
                   <p>
-                    targetted soft tissue massage. Assists in correcting
+                    Targetted soft tissue massage. Assists in correcting
                     imbalances from repetitive movements, preventing injury and
                     increasing flexibility
                   </p>

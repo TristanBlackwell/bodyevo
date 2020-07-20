@@ -114,7 +114,7 @@ class Landing extends Component {
                     </div>
                     <div>
                       <span> Sat :</span>
-                      <span> 9AM - 12PM</span>
+                      <span> 8:30AM - 12PM</span>
                     </div>
                     <div>
                       <span> Sun :</span>
@@ -206,7 +206,7 @@ class Landing extends Component {
                   Give us a call directly on <strong>07985310161</strong> or by
                   email at <strong>body.evo@hotmail.com</strong>.<br />
                   <br />
-                  if these dont suit you fill out our{" "}
+                  If these dont suit you fill out our{" "}
                   <NavLink to="/contact" id="contactLink">
                     contact form
                   </NavLink>{" "}
@@ -228,7 +228,7 @@ class Landing extends Component {
                     letterSpacing: "1.5px",
                   }}
                 >
-                  treat yourself to a soothing massage and relieve tension
+                  Treat yourself to a soothing massage and relieve tension
                 </p>
               </div>
             </div>

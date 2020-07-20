@@ -64,7 +64,7 @@ class OurGym extends Component {
         <div>
           <div className="container" id="gymHeaderText">
             <p className="center" id="gymInfoText">
-              Begin your journey with a 30 minute free trial session working
+              Step into your journey with a 30 minute free trial session working
               with a team member through our circuits learning the fundamental
               movements and how the gym functions with our unique style of
               training.
@@ -93,7 +93,7 @@ class OurGym extends Component {
               </h5>
               <br />
               <p>
-                our team has created unique 30 minute machine circuits designed
+                Our team has created unique 30 minute machine circuits designed
                 to help your body get tightened and toned. Our machines are
                 designed to remove stress away from the joints reducing the
                 chance of injuries and making it suitable for all ladies even
@@ -137,12 +137,12 @@ class OurGym extends Component {
             </div>
             <div className="col s12 m12 l6 cardText">
               <h5 className="center">
-                <i className="fas fa-heartbeat" /> endless health benefits
+                <i className="fas fa-heartbeat" /> Endless health benefits
               </h5>
               <br />
               <ul>
                 <li>
-                  <i className="fas fa-check" /> control your weight and gain
+                  <i className="fas fa-check" /> Control your weight and gain
                   muscle
                 </li>
                 <li>
