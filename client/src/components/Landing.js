@@ -44,8 +44,8 @@ class Landing extends Component {
                   <div>
                     <b>
                       In line with the latest government guidelines on Covid-19,
-                      We can say with much happiness that BodyEvo will re-open
-                      it's doors to members from Monday 27th July!
+                      We can say with much happiness that BodyEvo is now once
+                      again open!
                       <br /> We have worked continually to create the safest
                       possible environment to workout in and as a result have
                       some restrictions in place under reduced hours to protect
@@ -98,7 +98,7 @@ class Landing extends Component {
                   <b></b>
                 </div>
                 <div className="card-action" id="reopeningDate">
-                  Opening date: 27th July
+                  Opening date: We are open!
                   <br />
                   <br />
                   Opening hours -
