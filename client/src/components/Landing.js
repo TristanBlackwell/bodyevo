@@ -51,7 +51,16 @@ class Landing extends Component {
                       Be sure to check this site and our Facebook page for any further updates and we hope everyone
                       stays safe until we can join each other once again. <br/><br />
 
-                      Sharon & Nicole
+                      Sharon & Nicole<br /><br />
+
+                      We are once again running Evo on demand video classes for everyone missing
+                      classes and wishes to stay active over this lockdown. Check out our 
+                      <a
+                        href="https://www.facebook.com/pg/BodyEvoFitnessStudio/posts/?ref=page_internal"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{textDecoration: "underline"}}
+                      > Facebook </a> to find about more!
                       {/*
                       In line with the latest government guidelines on Covid-19,
                       We can say with much happiness that BodyEvo is now once
