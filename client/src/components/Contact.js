@@ -21,9 +21,7 @@ class Contact extends Component {
     const xhr = new XMLHttpRequest();
     xhr.open(form.method, form.action);
     xhr.setRequestHeader("Accept", "application/json");
-    console.log(1);
     xhr.onreadystatechange = () => {
-      console.log(2);
       if (xhr.readyState !== XMLHttpRequest.DONE) return;
       if (xhr.status === 200) {
         form.reset();

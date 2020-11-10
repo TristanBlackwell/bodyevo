@@ -43,6 +43,16 @@ class Landing extends Component {
                 <div className="card-content">
                   <div>
                     <b>
+                      Unfortunately, due to the latest update of Covid-19 restrictions we have had to
+                      close our doors once again. <br /><br/>
+                      In line with the current guidelines we plan to re-open on the 4th December following the
+                      relaxation of a national lockdown and hope to see all our ladies again before the year is out!
+
+                      Be sure to check this site and our Facebook page for any further updates and we hope everyone
+                      stays safe until we can join each other once again. <br/><br />
+
+                      Sharon & Nicole
+                      {/*
                       In line with the latest government guidelines on Covid-19,
                       We can say with much happiness that BodyEvo is now once
                       again open!
@@ -83,7 +93,7 @@ class Landing extends Component {
                       <br />
                       We thank you for much for patiently waiting and joining us
                       online and are happy to get everyone back together for our
-                      group sessions and for meeting some new ladies!
+                          group sessions and for meeting some new ladies! */}
                       <div id="covidSignup" className="center">
                         <NavLink
                           to="/ourGym"
@@ -98,7 +108,7 @@ class Landing extends Component {
                   <b></b>
                 </div>
                 <div className="card-action" id="reopeningDate">
-                  Opening date: We are open!
+                  Opening date: 4th December
                   <br />
                   <br />
                   Opening hours -

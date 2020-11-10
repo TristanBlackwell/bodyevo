@@ -13,3 +13,5 @@ Fontawesome for various icons
 Stripe checkout for membership payments
 
 Site is continually updated.
+
+Created by Tristan Blackwell
