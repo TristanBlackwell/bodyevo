@@ -45,7 +45,7 @@ class Landing extends Component {
                     <b>
                       Unfortunately, due to the latest update of Covid-19 restrictions we have had to
                       close our doors once again. <br /><br/>
-                      In line with the current guidelines we plan to re-open on the 4th December following the
+                      In line with the current guidelines we plan to re-open on the 3rd December following the
                       relaxation of a national lockdown and hope to see all our ladies again before the year is out!
 
                       Be sure to check this site and our Facebook page for any further updates and we hope everyone
@@ -117,7 +117,7 @@ class Landing extends Component {
                   <b></b>
                 </div>
                 <div className="card-action" id="reopeningDate">
-                  Opening date: 4th December
+                  Opening date: 3rd December
                   <br />
                   <br />
                   Opening hours -
