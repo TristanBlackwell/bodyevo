@@ -242,7 +242,6 @@ class Landing extends Component {
                 <h5 className="header col s12 light">And finally.... Relax.</h5>
                 <p
                   style={{
-                    fontFamily: "Montserrat",
                     fontSize: "18px",
                     letterSpacing: "1.5px",
                   }}

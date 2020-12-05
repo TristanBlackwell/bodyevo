@@ -185,7 +185,7 @@ class OurGym extends Component {
             </a>{" "}
             prior to choosing a membership. Once completed you can send these to
             us at{" "}
-            <em style={{ color: "#252523", fontSize: "22px" }}>
+            <em style={{ color: "rgb(230,192,124)", fontSize: "22px" }}>
               body.evo@hotmail.com
             </em>{" "}
             or you can bring these with you to your first session so you can
@@ -215,9 +215,9 @@ class OurGym extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  membership contract
+                  membership contract,
                 </a>{" "}
-                and have completed the{" "}
+                have completed the{" "}
                 <a
                   href="https://www.dropbox.com/s/du9dzp5rodlu8qq/PARQ.pdf?dl=0"
                   target="_blank"
@@ -226,6 +226,9 @@ class OurGym extends Component {
                   physical readiness questionnaire
                 </a>{" "}
                 to the best of my knowledge
+                <br />
+                and am aware that signing up to a membership gives permission for payments to be automatically
+                taken monthly until cancelled.
               </span>
             </label>
           </div>

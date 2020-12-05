@@ -8,18 +8,20 @@
 
 body {
   overflow-x: hidden;
-  background-color: #b59762;
+  background-color: rgb(40, 40, 40);
+  font-family: "Lora", sans-serif;
 }
 nav ul a,
 nav .brand-logo {
-  color: #b59762;
-  font-family: "Archivo Narrow";
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
+  text-transform: uppercase;
   font-size: 18px;
 }
 
 nav {
-  background-color: #252523;
-  border-bottom: 1px solid #b59762;
+  background-color: rgb(1, 4, 11);
+  border-bottom: 1px solid rgb(230, 192, 124);
 }
 
 .brand-logo {
@@ -47,18 +49,19 @@ p {
 }
 
 .sidenav a {
-  color: #b59762 !important;
+  color: rgb(230, 192, 124) !important;
   font-size: 16px;
 }
 
 .sidenav a span {
-  font-family: "Archivo Narrow";
+  font-family: "Montserrat";
+  text-transform: uppercase;
   font-size: 16px;
   padding-left: 5px;
 }
 
 .sidenav-trigger {
-  color: #b59762;
+  color: rgb(230, 192, 124);
 }
 
 .parallax {
@@ -72,14 +75,15 @@ p {
 }
 
 #index-banner h5 {
-  font-family: "Archivo Narrow";
+  font-family: "Montserrat";
   text-transform: uppercase;
 }
 
 #landingTitle,
 #gymTitle {
-  font-family: "Archivo Black";
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+  font-family: "Montserrat";
+  font-weight: 300;
+  text-transform: uppercase;
   color: #dfd8c8;
   letter-spacing: 1.5px;
 }
@@ -90,9 +94,10 @@ p {
 
 #download-button {
   background-color: transparent;
-  border: 4px solid #b59762;
-  color: #dfd8c8;
-  font-family: "Archivo Narrow";
+  border: 1px solid rgb(230, 192, 124);
+  border-radius: 45px;
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -100,35 +105,28 @@ p {
 }
 
 #centerFeature {
-  border-left: 1px solid #3a3335;
-  border-right: 1px solid #3a3335;
+  border-left: 1px solid rgb(230, 192, 124);
+  border-right: 1px solid rgb(230, 192, 124);
 }
 
 .icon-block h5 {
-  color: #dfd8c8;
-  font-family: "Archivo Narrow";
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
+  text-transform: uppercase;
   font-size: 25px;
   letter-spacing: 1.5px;
 }
 
 .icon-block p {
-  color: #252523;
-  font-family: "Montserrat";
-}
-
-.tagline {
-  font-family: "Montserrat";
+  color: white;
 }
 
 a {
-  color: #b59762;
-  font-family: "Montserrat";
+  color: rgb(230, 192, 124);
 }
 
 strong {
-  color: #77815c;
-  font-family: "Montserrat";
+  color: rgb(230, 192, 124);
   font-size: 20px;
 }
 
@@ -139,18 +137,17 @@ strong {
 }
 
 #indexContact {
-  background-color: #252523;
+  background-color: rgb(40, 40, 40);
 }
 
 #indexContact h3 {
-  color: #b59762;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
-  font-family: "Archivo Narrow";
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 #indexContact p {
-  color: #b59762;
-  font-family: "Montserrat";
+  color: white;
   font-size: 18px;
   font-weight: 500;
 }
@@ -175,7 +172,7 @@ strong {
 #contactLink {
   font-size: 20px;
   font-weight: 700;
-  color: #77815c;
+  color: rgb(230, 192, 124);
 }
 
 #contactLink:hover {
@@ -184,11 +181,11 @@ strong {
 
 .info {
   padding: 4vh 7vw 4vh 7vw;
-  background-color: #252523;
+  background-color: rgb(40, 40, 40);
 }
 
 .divider {
-  background-color: #252523;
+  background-color: rgb(230, 192, 124);
   width: 85% !important;
   margin: auto;
 }
@@ -208,7 +205,8 @@ strong {
     url(./images/gymHero.jpg) no-repeat center;
   background-size: cover;
   height: 30vh;
-  font-family: "monospace", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
   font-weight: 600;
 }
 
@@ -222,17 +220,17 @@ strong {
   margin: auto;
   text-align: left;
   padding-bottom: 2.5vh;
-  font-family: "Montserrat";
   font-size: 20px;
 }
 
 .gymHeader {
   padding-top: 1px;
   line-height: 0;
-  color: #dfd8c8;
+  color: white;
 }
 
 #gymHeaderText {
+  background-color: rgb(40, 40, 40);
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
@@ -242,7 +240,7 @@ strong {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 15px;
-  color: #252523;
+  color: white;
 }
 
 .cardItem {
@@ -257,7 +255,7 @@ strong {
 }
 
 #card1 {
-  background-color: #252523;
+  background-color: rgb(40, 40, 40);
 }
 
 .cardImage {
@@ -271,7 +269,7 @@ strong {
 }
 
 .cardText i {
-  color: #b59762;
+  color: rgb(230, 192, 124);
   padding-right: 1vw;
 }
 
@@ -281,18 +279,17 @@ strong {
 
 .cardText h5 {
   font-size: 34px;
-  font-family: "Archivo Narrow", monospace;
-  color: #b59762;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: rgb(230, 192, 124);
   font-weight: 800;
   letter-spacing: 1.5px;
-  text-shadow: 3px 3px rgba(0, 0, 0, 0.6);
 }
 
 .cardText p {
   padding: 0 2vw 0 2vw;
   font-size: 20px;
-  font-family: "Montserrat";
-  color: #b59762;
+  color: white;
 }
 
 .cardText ul {
@@ -300,14 +297,13 @@ strong {
 }
 
 .cardText ul i {
-  color: #77815c;
+  color: rgb(230, 192, 124);
 }
 
 .cardText li {
   padding-top: 2vh;
   font-size: 20px;
-  font-family: "Montserrat";
-  color: #b59762;
+  color: white;
 }
 
 .fa-check {
@@ -322,8 +318,8 @@ strong {
 #pricingSection {
   padding-top: 1%;
   padding-bottom: 1%;
-  background-color: #b59762;
-  color: #252523;
+  background-color: rgb(1, 4, 11);
+  color: white;
 }
 
 #memberships {
@@ -335,13 +331,12 @@ input[type="checkbox"] {
 }
 
 #contractCheck {
-  color: #252523;
+  color: rgb(230, 192, 124);
 }
 
 #contractCheck a,
 #contractCheck span {
-  color: #252523;
-  font-family: "Montserrat";
+  color: rgb(128, 128, 128);
 }
 
 #contractCheck a {
@@ -368,10 +363,10 @@ input[type="checkbox"] {
 }
 
 #pricingSection h3 {
-  color: #dfd8c8;
-  font-family: "Archivo Narrow";
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
+  text-transform: uppercase;
   letter-spacing: 1.5px;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 #pricingSection i {
@@ -380,50 +375,45 @@ input[type="checkbox"] {
 
 #membershipsText {
   font-size: 20px;
-  font-family: "Montserrat";
-  color: #252523;
+  color: rgb(128, 128, 128);
   padding: 0 5vw 0 5vw;
 }
 
 #membershipsText a {
   text-decoration: underline;
-  color: #252523;
+  color: rgb(230, 192, 124);
 }
 
 .card {
   padding-top: 1%;
   padding-bottom: 1%;
   height: 550px;
-  background-color: #252523;
+  background-color: rgb(40, 40, 40);
 }
 
 .card i {
-  color: #b59762 !important;
+  color: rgb(230, 192, 124) !important;
 }
 
 .card h5 {
-  color: #b59762;
-  font-family: "Archivo Narrow";
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 .cardList {
   margin: 5% 5% 0 5%;
   padding-top: 3vh;
-  color: #b59762;
-  font-family: "Montserrat";
+  color: white;
   font-size: 18px;
   font-weight: 800;
   letter-spacing: 1.5px;
-  border-top: 1px solid #b59762;
+  border-top: 1px solid rgb(230, 192, 124);
   overflow-x: hidden;
 }
 
 .cardList li {
   cursor: pointer;
-}
-
-.cardList strong {
-  font-family: "Montserrat";
 }
 
 #treadmillImg {
@@ -432,7 +422,8 @@ input[type="checkbox"] {
 
 #signup-button {
   background-color: #252523;
-  font-family: "Archivo Narrow";
+  font-family: "Montserrat";
+  text-transform: uppercase;
   font-size: 20px;
   color: #b59762;
 }
@@ -442,13 +433,12 @@ input[type="checkbox"] {
 }
 
 .pricing {
-  color: #252523;
+  color: rgb(128, 128, 128);
   font-size: 18px;
-  font-family: "Montserrat";
 }
 
 #priceContact {
-  color: #252523;
+  color: rgb(230, 192, 124);
   text-decoration: underline;
 }
 
@@ -465,7 +455,8 @@ input[type="checkbox"] {
 #beautyHero h2,
 #gymHero h2,
 #contactHero h2 {
-  font-family: "Archivo Black", monspace, sans-serif;
+  font-family: "Montserrat", monospace, sans-serif;
+  text-transform: uppercase;
   padding-top: 5vh;
   color: #dfd8c8;
   letter-spacing: 1.5px;
@@ -476,66 +467,64 @@ input[type="checkbox"] {
 #gymHero p,
 #contactHero p {
   font-size: 22px;
-  font-family: "Archivo Narrow", monospace;
   letter-spacing: 1.5px;
   color: #dfd8c8;
   text-transform: uppercase;
 }
 
-#contactHero h2 {
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
-}
-
-#contactHero p {
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
-}
-
 #classesSummary {
   margin-top: 3vh;
   margin-bottom: 5vh;
-  background-color: #252523;
+  background-color: rgb(40, 40, 40);
 }
 
 #classesSummary .container {
-  background-color: #b59762;
+  background-color: rgb(40, 40, 40);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(230, 192, 124);
+  border-radius: 45px;
 }
 
 #classesHeader {
   font-size: 32px;
-  font-family: "Archivo Narrow", sans-serif;
-  color: #252523;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: rgb(230, 192, 124);
 }
 
 #classesHeader strong {
   font-weight: 600;
-  color: #252523;
+  color: white;
 }
 
 #benefits .fas {
   transform: scale(3);
-  border: 0.5px solid #dfd8c8;
+  border: 0.5px solid rgb(230, 192, 124);
   border-radius: 50%;
   padding: 5px;
-  color: #252523;
+  color: rgb(230, 192, 124);
 }
 
 #benefitsText p {
-  font-family: "Archivo Narrow";
+  text-transform: uppercase;
   font-size: 24px;
   letter-spacing: 2px;
-  color: #252523;
+  color: white;
 }
 
 #bookClass,
 #beautyHeader {
-  font-family: "Archivo Narrow";
+  font-family: "Montserrat";
+  text-transform: uppercase;
   font-size: 20px;
   margin: 0 5vw 0 5vw;
 }
 
 #bookClass a {
-  background-color: #252523;
-  color: #b59762;
+  background-color: rgb(40, 40, 40);
+  border: 1px solid rgb(230, 192, 124);
+  border-radius: 45px;
+  color: rgb(230, 192, 124);
   font-size: 16px;
 }
 
@@ -544,8 +533,7 @@ input[type="checkbox"] {
 }
 
 #bookClass p {
-  color: #252523;
-  font-family: "Montserrat";
+  color: white;
 }
 
 #emailLink {
@@ -566,23 +554,23 @@ input[type="checkbox"] {
 }
 
 .covidAlert {
-  color: #b59762;
+  color: white;
   font-size: 16px;
   padding-bottom: 2.5vh;
 }
 
 .covidAlert h2 {
-  color: #dfd8c8;
-  font-family: "Archivo Narrow";
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.6);
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 .covidAlert .card {
-  background-color: #252523;
+  background-color: rgb(40, 40, 40);
   width: 75% !important;
   margin: auto;
   text-align: left;
-  font-family: "Montserrat";
+  font-family: "Lora";
 }
 
 #guidelinesList {
@@ -596,14 +584,16 @@ input[type="checkbox"] {
 }
 
 .card-action {
-  font-family: "Archivo Narrow";
+  font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 #covidSignupButton {
   background-color: transparent;
-  border: 4px solid #b59762;
-  color: inherit;
-  font-family: "Archivo Narrow";
+  border: 1px solid rgb(230, 192, 124);
+  border-radius: 45px;
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1.5px;
@@ -613,9 +603,8 @@ input[type="checkbox"] {
 
 #reopeningDate {
   display: block;
-  color: #dfd8c8;
+  color: white;
   font-size: 25px;
-  font-weight: 900;
   letter-spacing: 1.5px;
 }
 
@@ -633,8 +622,7 @@ input[type="checkbox"] {
 }
 
 #contactAlert a {
-  color: #77815c;
-  font-family: "Archivo Narrow";
+  color: rgb(230, 192, 124);
   font-size: 22px;
 }
 
@@ -644,16 +632,16 @@ input[type="checkbox"] {
 }
 
 table {
-  font-family: "Montserrat";
   background-color: #252523;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
-  color: #b59762;
+  color: White;
   border-radius: 7px;
 }
 
 thead {
-  font-family: "Archivo Narrow";
-  color: #b59762;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  color: rgb(230, 192, 124);
   font-size: 18px;
   letter-spacing: 1.5px;
 }
@@ -667,10 +655,9 @@ thead {
 }
 
 #timetable {
-  font-family: "Montserrat";
   font-size: 22px;
-  background-color: #252523;
-  color: #b59762;
+  background-color: rgb(40, 40, 40);
+  color: white;
   padding: 1vh 0 1vh 0;
 }
 
@@ -698,29 +685,29 @@ thead {
 }
 
 #waitingList a {
-  color: #77815c;
+  color: rgb(230, 192, 124);
 }
 
 #srBio {
   margin-top: 3vh;
   padding: 1vw;
-  background-color: #252523;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  background-color: rgb(40, 40, 40);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 #srBio h3 {
-  color: #dfd8c8;
-  font-family: "Archivo Narrow";
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 #srBio h5 {
-  color: #77815c;
+  color: rgb(230, 192, 124);
 }
 
 #srBio p {
-  font-family: "Montserrat";
   font-size: 18px;
-  color: #b59762;
+  color: white;
 }
 
 #bioImage {
@@ -735,20 +722,21 @@ thead {
 }
 
 #sliderTitle {
-  font-family: "Archivo Narrow", monospace, sans-serif;
+  font-family: "Montserrat";
+  text-transform: uppercase;
   color: #dfd8c8;
 }
 
 #sliderTitleSub {
   color: #252523;
   font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 #evoDesc {
   margin-left: 20%;
   margin-right: 20%;
-  font-family: "Montserrat";
-  color: #252523;
+  color: white;
 }
 
 .treatments .card {
@@ -765,17 +753,13 @@ thead {
 }
 
 .card-title {
-  font-family: "Archivo Narrow";
-}
-
-.card-content p {
   font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 .card-action {
   display: flex;
   justify-content: space-between;
-  font-family: "Montserrat";
 }
 
 .horizontal {
@@ -783,24 +767,21 @@ thead {
 }
 
 #formArea {
-  background-color: #252523;
+  background-color: rgb(40, 40, 40);
 }
 
 #formSection {
   padding: 3vh 0 3vh 0;
   color: #b59762;
-  background-color: #b59762;
-  font-family: "Montserrat";
+  background-color: rgb(40, 40, 40);
 }
 
 #formSection input {
-  border-bottom-color: #252523;
-  font-family: "Montserrat";
+  border-bottom-color: rgb(230, 192, 124);
 }
 
 #formSection textarea {
-  border-bottom-color: #252523;
-  font-family: "Montserrat";
+  border-bottom-color: rgb(230, 192, 124);
 }
 
 .invalid {
@@ -808,40 +789,41 @@ thead {
 }
 
 #formSection label {
-  color: #252523;
+  color: white;
   font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 #formSection .active {
   background-color: transparent !important;
-  color: #252523;
+  color: white;
 }
 
 .input-field input:focus {
-  border-bottom: 1px solid #77815c !important;
-  box-shadow: 0 1px 0 0 #77815c !important;
+  border-bottom: 1px solid rgb(230, 192, 124) !important;
+  box-shadow: 0 1px 0 0 rgb(230, 192, 124) !important;
 }
 
 .input-field input[type="text"]:focus,
 .materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #77815c !important;
-  box-shadow: 0 1px 0 0 #77815c !important;
+  border-bottom: 1px solid rgb(230, 192, 124) !important;
+  box-shadow: 0 1px 0 0 rgb(230, 192, 124) !important;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #252523;
+  color: rgb(230, 192, 124);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #252523;
+  color: rgb(230, 192, 124);
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #252523;
+  color: rgb(230, 192, 124);
 }
 
 #submitForm {
@@ -849,15 +831,17 @@ thead {
 }
 
 #submitForm i {
-  background-color: #252523;
+  background-color: rgb(40, 40, 40);
 }
 
 #submitButton {
-  background-color: #252523 !important;
-  color: #b59762;
-  font-family: "Archivo Narrow";
+  background-color: rgb(40, 40, 40) !important;
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
+  text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 18px;
+  border-radius: 1px solid rgb(230, 192, 124) !important;
 }
 
 #submitButton:hover {
@@ -865,19 +849,19 @@ thead {
 }
 
 #formSection h6 {
-  color: #252523;
+  color: white;
   font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 #formSection h6 a {
-  color: #252523;
+  color: rgb(230, 192, 124);
 }
 
 .footer-copyright {
   height: 5vh;
-  color: #252523;
-  font-family: "Montserrat";
-  background-color: rgba(37, 37, 35, 0.027);
+  color: white;
+  background-color: rgb(40, 40, 40);
 }
 
 @media only screen and (max-width: 992px) {
@@ -972,23 +956,22 @@ thead {
 }
 .icon-block .material-icons {
   font-size: inherit;
-  color: #252523;
+  color: rgb(230, 192, 124);
 }
 
 footer.page-footer {
   margin: 0;
-  background-color: #b59762;
+  background-color: rgb(40, 40, 40);
   opacity: 0.8;
-  color: #252523;
-  font-family: "Montserrat";
+  color: white;
 }
 
 .page-footer h5 {
-  color: #dfd8c8;
-  font-family: "Archivo Narrow";
+  color: rgb(230, 192, 124);
+  font-family: "Montserrat";
+  text-transform: uppercase;
 }
 
 .page-footer p {
   font-size: 17px;
-  font-family: "Montserrat";
 }
