@@ -28,7 +28,7 @@ View the [source code]
 
 ## Usage
 
-This site is live and update to date with contributions made regularly
+This site is live and up to date with contributions made regularly
 
 ## License
 
