@@ -9,6 +9,7 @@ The website required displaying various information regarding the studio, classe
 A payment solution was required for allowing clients to sign up to memberships after agreeing to the relevant T&C's and a contact form in the event of customers having questions to the business.
 
 View the site [here]
+<br>
 View the [source code]
 
 [here]: https://www.bodyevowitney.co.uk/
