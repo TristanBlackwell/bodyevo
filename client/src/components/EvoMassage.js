@@ -82,7 +82,7 @@ class EvoMassage extends Component {
                   <div className="card-content">
                     <p style={{whiteSpace: "pre-wrap"}}>
                       <b>
-                        {this.state.notice.items[0].body}
+                        {this.state.notice.items[1].body}
                       </b>
                     </p>
                     <b></b>

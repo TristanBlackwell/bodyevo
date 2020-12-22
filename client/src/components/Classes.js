@@ -78,7 +78,7 @@ class Classes extends Component {
                     {this.state.notices === "Error" ? <p>Error loading content</p> :
                     <p style={{whiteSpace: "pre-wrap"}}>
                       <b>
-                      {this.state.notices.items[1].body}  
+                      {this.state.notices.items[2].body}  
                       </b>
                     </p>}
                   </div>

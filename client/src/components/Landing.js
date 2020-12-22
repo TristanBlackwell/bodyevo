@@ -40,7 +40,8 @@ class Landing extends Component {
           loaded: true
         })
       } else {
-        var times = Object.keys(res.data.covidNoticeCollection.items[2].openTimes).map((key) => [(key), res.data.covidNoticeCollection.items[2].openTimes[key]]);
+        console.log(res)
+        var times = Object.keys(res.data.covidNoticeCollection.items[0].openTimes).map((key) => [(key), res.data.covidNoticeCollection.items[0].openTimes[key]]);
         this.setState({
           response: res.data.covidNoticeCollection,
           times: times,
@@ -93,7 +94,7 @@ class Landing extends Component {
                   <div>
                     <div className="card-content" style={{whiteSpace: "pre-wrap"}}>
                       <b>
-                        {this.state.response.items[2].body}
+                        {this.state.response.items[0].body}
                         </b>
                         <div id="covidSignup" className="center">
                             <NavLink
