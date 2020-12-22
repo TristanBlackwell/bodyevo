@@ -21,7 +21,10 @@ class Landing extends Component {
     this.state = {
       response: null,
       notice: null,
-      times: null,
+      time1: null,
+      time2: null,
+      time3: null,
+      time4: null,
       loaded: false
     }
   }
@@ -43,13 +46,28 @@ class Landing extends Component {
           loaded: true
         })
       } else {
+        console.log(res)
         res.data.covidNoticeCollection.items.forEach(notice => {
           if (notice.id == "0") {
-            var times = Object.keys(notice.openTimes).map((key) => [(key), notice.openTimes[key]]);
+            let time1, time2, time3, time4;
+            var times = Object.keys(notice.openTimes).map((key) => {
+              if (key === "MON - THURS") {
+                time1 = notice.openTimes[key]
+              } else if (key === "FRI") {
+                time2 = notice.openTimes[key]
+              } else if (key === "SAT") {
+                time3 = notice.openTimes[key]
+              } else if (key === "SUN") {
+                time4 = notice.openTimes[key]
+              }
+            });
             this.setState({
               response: res.data.covidNoticeCollection,
               notice: notice,
-              times: times,
+              time1: time1,
+              time2: time2,
+              time3: time3,
+              time4: time4,
               loaded: true
             })
           }
@@ -121,20 +139,20 @@ class Landing extends Component {
                       <br />
                       <div id="openingHours">
                         <div>
-                          <span> {this.state.times[0][0]} :</span>
-                          <span> {this.state.times[0][1]}</span>
+                          <span> Mon - Thurs:</span>
+                          <span> {this.state.time1}</span>
                         </div>
                         <div>
-                          <span> {this.state.times[1][0]}</span>
-                          <span> {this.state.times[1][1]}</span>
+                          <span> Fri:</span>
+                          <span> {this.state.time2}</span>
                         </div>
                         <div>
-                          <span> {this.state.times[2][0]}</span>
-                          <span> {this.state.times[2][1]}</span>
+                          <span> Sat:</span>
+                          <span> {this.state.time3}</span>
                         </div>
                         <div>
-                          <span> {this.state.times[3][0]}</span>
-                          <span> {this.state.times[3][1]}</span>
+                          <span> Sun:</span>
+                          <span> {this.state.time4}</span>
                         </div>
                       </div>
                     </div>
