@@ -8,7 +8,7 @@ import treadmill from "../images/treadmillResize.jpg";
 import gympic3 from "../images/gymPic3.jpg";
 
 const stripePromise = loadStripe(
-  "pk_live_51Gv1QaJa7Om5U5HjykHwgUaZwxnqKIIT80ePxnjAq4DbWm68OxsQfKcCMcbEEpoOQTVOMGW9dZyb3mDBtwyH7UWm00Gjs4vcQc"
+  process.env.REACT_APP_STRIPE_KEY
 );
 
 class OurGym extends Component {
