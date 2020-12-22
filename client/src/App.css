@@ -31,14 +31,6 @@ nav {
 .hide-on-med-and-down .fa-facebook {
   transform: scale(1.2);
 }
-
-#loading {
-  display: flex;
-  justify-content: center;
-  color: white;
-  width: 100%;
-}
-
 .logo {
   max-width: 100%;
   max-height: 100%;
