@@ -7,6 +7,8 @@ const query = `
 {
   covidNoticeCollection {
     items {
+      id
+      title
       body
       openDate
       openTimes
@@ -53,13 +55,17 @@ class EvoMassage extends Component {
           loaded: true
         })
       } else {
-        var treatments = Object.keys(res.data.evoTreatmentCollection.items).map((key) => [res.data.evoTreatmentCollection.items[key]]);
-        this.setState({
-          response: "Success",
-          data: res.data.evoTreatmentCollection,
-          notice: res.data.covidNoticeCollection,
-          treatments: treatments,
-          loaded: true
+        res.data.covidNoticeCollection.items.forEach(notice => {
+          if (notice.id == "2") {
+            var treatments = Object.keys(res.data.evoTreatmentCollection.items).map((key) => [res.data.evoTreatmentCollection.items[key]]);
+          this.setState({
+            response: "Success",
+            data: res.data.evoTreatmentCollection,
+            notice: notice,
+            treatments: treatments,
+            loaded: true
+        })
+          }
         })
       }
     })
@@ -82,7 +88,7 @@ class EvoMassage extends Component {
                   <div className="card-content">
                     <p style={{whiteSpace: "pre-wrap"}}>
                       <b>
-                        {this.state.notice.items[1].body}
+                        {this.state.notice.body}
                       </b>
                     </p>
                     <b></b>

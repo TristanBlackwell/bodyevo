@@ -7,6 +7,8 @@ import classSignpost from "../images/signpost.jpg";
 const query = `{
   covidNoticeCollection {
     items {
+      id
+      title
       body
       openDate
       openTimes
@@ -26,7 +28,7 @@ class Classes extends Component {
 
     this.state = {
       result: null,
-      notices: null,
+      notice: null,
       classes: null,
       loaded: false
     }
@@ -49,12 +51,16 @@ class Classes extends Component {
           loaded: true
         })
       } else {
-        var classes = Object.keys(res.data.classTableCollection.items[0].classes).map((key) => [(key), res.data.classTableCollection.items[0].classes[key]]);
-        this.setState({
-          response: "Success",
-          notices: res.data.covidNoticeCollection,
-          classes: classes,
-          loaded: true
+        res.data.covidNoticeCollection.items.forEach(notice => {
+          if (notice.id == "1") {
+            var classes = Object.keys(res.data.classTableCollection.items[0].classes).map((key) => [(key), res.data.classTableCollection.items[0].classes[key]]);
+            this.setState({
+              response: "Success",
+              notice: notice,
+              classes: classes,
+              loaded: true
+            })
+          }
         })
       }
     })
@@ -78,7 +84,7 @@ class Classes extends Component {
                     {this.state.notices === "Error" ? <p>Error loading content</p> :
                     <p style={{whiteSpace: "pre-wrap"}}>
                       <b>
-                      {this.state.notices.items[2].body}  
+                      {this.state.notice.body}  
                       </b>
                     </p>}
                   </div>

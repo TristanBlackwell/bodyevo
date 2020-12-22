@@ -5,6 +5,8 @@ import { NavLink } from "react-router-dom";
 const query = `{
   covidNoticeCollection {
     items {
+      id
+      title
       body
       openDate
       openTimes
@@ -18,6 +20,7 @@ class Landing extends Component {
     super();
     this.state = {
       response: null,
+      notice: null,
       times: null,
       loaded: false
     }
@@ -40,12 +43,16 @@ class Landing extends Component {
           loaded: true
         })
       } else {
-        console.log(res)
-        var times = Object.keys(res.data.covidNoticeCollection.items[0].openTimes).map((key) => [(key), res.data.covidNoticeCollection.items[0].openTimes[key]]);
-        this.setState({
-          response: res.data.covidNoticeCollection,
-          times: times,
-          loaded: true
+        res.data.covidNoticeCollection.items.forEach(notice => {
+          if (notice.id == "0") {
+            var times = Object.keys(notice.openTimes).map((key) => [(key), notice.openTimes[key]]);
+            this.setState({
+              response: res.data.covidNoticeCollection,
+              notice: notice,
+              times: times,
+              loaded: true
+            })
+          }
         })
       }
     })
@@ -94,7 +101,7 @@ class Landing extends Component {
                   <div>
                     <div className="card-content" style={{whiteSpace: "pre-wrap"}}>
                       <b>
-                        {this.state.response.items[0].body}
+                        {this.state.notice.body}
                         </b>
                         <div id="covidSignup" className="center">
                             <NavLink
@@ -107,7 +114,7 @@ class Landing extends Component {
                         </div>
                       </div>
                       <div className="card-action" id="reopeningDate">
-                      Opening date: {this.state.response.items[2].openDate}
+                      Opening date: {this.state.notice.openDate}
                       <br />
                       <br />
                       Opening hours -
