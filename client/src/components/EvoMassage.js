@@ -56,7 +56,7 @@ class EvoMassage extends Component {
         })
       } else {
         res.data.covidNoticeCollection.items.forEach(notice => {
-          if (notice.id == "2") {
+          if (notice.id === 2) {
             var treatments = Object.keys(res.data.evoTreatmentCollection.items).map((key) => [res.data.evoTreatmentCollection.items[key]]);
           this.setState({
             response: "Success",

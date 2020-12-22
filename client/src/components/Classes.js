@@ -52,7 +52,7 @@ class Classes extends Component {
         })
       } else {
         res.data.covidNoticeCollection.items.forEach(notice => {
-          if (notice.id == "1") {
+          if (notice.id === 1) {
             var classes = Object.keys(res.data.classTableCollection.items[0].classes).map((key) => [(key), res.data.classTableCollection.items[0].classes[key]]);
             this.setState({
               response: "Success",

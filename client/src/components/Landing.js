@@ -46,20 +46,27 @@ class Landing extends Component {
           loaded: true
         })
       } else {
-        console.log(res)
         res.data.covidNoticeCollection.items.forEach(notice => {
-          if (notice.id == "0") {
+          if (notice.id === 0) {
             let time1, time2, time3, time4;
-            var times = Object.keys(notice.openTimes).map((key) => {
-              if (key === "MON - THURS") {
-                time1 = notice.openTimes[key]
-              } else if (key === "FRI") {
-                time2 = notice.openTimes[key]
-              } else if (key === "SAT") {
-                time3 = notice.openTimes[key]
-              } else if (key === "SUN") {
-                time4 = notice.openTimes[key]
+            Object.keys(notice.openTimes).map((key) => {
+              switch (key) {
+                case "MON - THURS":
+                  time1 = notice.openTimes[key];
+                  break;
+                case "FRI":
+                  time2 = notice.openTimes[key];
+                  break;
+                case "SAT":
+                  time3 = notice.openTimes[key];
+                  break;
+                case "SUN":
+                  time4 = notice.openTimes[key];
+                  break;
+                default:
+                  console.log("error")
               }
+              return 0;
             });
             this.setState({
               response: res.data.covidNoticeCollection,
@@ -77,7 +84,6 @@ class Landing extends Component {
   }
 
   render() {
-
     if (this.state.loaded) {
       return (
         <div>
@@ -158,107 +164,6 @@ class Landing extends Component {
                     </div>
                     </div>
                     }
-                  {/*<div className="card-content">
-                    <div>
-                      <b>
-                        
-                        Unfortunately, due to the latest update of Covid-19 restrictions we have had to
-                        close our doors once again. <br /><br/>
-                        In line with the current guidelines we plan to re-open on the 3rd December following the
-                        relaxation of a national lockdown and hope to see all our ladies again before the year is out!
-  
-                        Be sure to check this site and our Facebook page for any further updates and we hope everyone
-                        stays safe until we can join each other once again. <br/><br />
-  
-                        Sharon & Nicole<br /><br />
-  
-                        We are once again running Evo on demand video classes for everyone missing
-                        classes and wishes to stay active over this lockdown. Check out our 
-                        <a
-                          href="https://www.facebook.com/pg/BodyEvoFitnessStudio/posts/?ref=page_internal"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          style={{textDecoration: "underline"}}
-                        > Facebook </a> to find about more!
-                        In line with the latest government guidelines on Covid-19,
-                        We can say with much happiness that BodyEvo is now once
-                        again open!
-                        <br /> We have worked continually to create the safest
-                        possible environment to workout in and as a result have
-                        some restrictions in place under reduced hours to protect
-                        everyone involved whilst reviewing the changes we make.
-                        <br />
-                        <br />
-                        The guidelines are as follows:
-                        <ul id="guidelinesList">
-                          <li>
-                            Maximum 8 people in the gym (2 maximum for the
-                            hydraulic room).
-                          </li>
-                          <li>
-                            1 hour time slots to give all members an equal chance
-                            at visiting the gym.
-                          </li>
-                          <li>
-                            Social distancing will be in force for all members and
-                            staff.
-                          </li>
-                          <li>
-                            Hand sanitiser used on entering and leaving the gym
-                            with all equipment cleaned after use
-                          </li>
-                          <li>Card payments are preferred.</li>
-                        </ul>
-                        <br />
-                        * Bookings are not currently required at this time *
-                        <br />
-                        <br />
-                        These will be continually reviewed to create the smoothest
-                        functioning gym we can whilst ensuring everyone is
-                        protected.
-                        <br />
-                        <br />
-                        We thank you for much for patiently waiting and joining us
-                        online and are happy to get everyone back together for our
-                            group sessions and for meeting some new ladies!
-                        <div id="covidSignup" className="center">
-                          <NavLink
-                            to="/ourGym"
-                            id="covidSignupButton"
-                            className="btn-large waves-effect waves-light"
-                          >
-                            Sign Up Today
-                          </NavLink>
-                        </div>
-                      </b>
-                    </div>
-                    <b></b>
-                  </div>*/}
-                  {/*<div className="card-action" id="reopeningDate">
-                    Opening date: 3rd December
-                    <br />
-                    <br />
-                    Opening hours -
-                    <br />
-                    <div id="openingHours">
-                      <div>
-                        <span> Mon - Thurs :</span>
-                        <span> 8:30AM - 1PM / 4PM - 8PM</span>
-                      </div>
-                      <div>
-                        <span> Fri :</span>
-                        <span> 8:30AM - 1PM / 4PM - 6PM</span>
-                      </div>
-                      <div>
-                        <span> Sat :</span>
-                        <span> 8:30AM - 12PM</span>
-                      </div>
-                      <div>
-                        <span> Sun :</span>
-                        <span> Closed</span>
-                      </div>
-                    </div>
-                  </div>*/}
                 </div>
               </div>
             </div>
