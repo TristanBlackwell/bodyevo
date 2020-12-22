@@ -1,17 +1,35 @@
-# bodyevo
+# Bodyevo
 
-Body Evo is a react based site for a local ladies gym/studio
+## About the project
 
-deployed at https://www.bodyevowitney.co.uk/
+Body Evo is a small ladies studio/gym with the requirements of a quick, responsive and intuitive website for its customers and clients.
 
-React version 16
+The website required displaying various information regarding the studio, classes and Evo massage.
 
-Materializecss for initial styling
+A payment solution was required for allowing clients to sign up to memberships after agreeing to the relevant T&C's and a contact form in the event of customers having questions to the business.
 
-Fontawesome for various icons
+[View the site here](https://www.bodyevowitney.co.uk/)
+[View the source code] (https://github.com/TristanBlackwell/bodyevo)
 
-Stripe checkout for membership payments
+## Built with
 
-Site is continually updated.
+- HTML/CSS/JavaScript
+- React
+- GraphQL
+- Stripe
+- Formspree
+- Contentful
+- Materializecss
+- Fontawesome
 
-Created by Tristan Blackwell
+## Usage
+
+This site is live and update to date with contributions made regularly
+
+## License
+
+Distributed under the MIT License.
+
+## Creator
+
+[Tristan Blackwell](https://github.com/TristanBlackwell)
